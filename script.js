@@ -26,8 +26,8 @@ function showStudentInfo() {
 
 
 // Function to show welcome message
-function showWelcomeMessage() {
-    alert("Welcome to the Student Information Web App!");
+function showTeamMessage() {
+    alert("Welcome to our Student Information System!");
 }
 
 
