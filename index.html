@@ -1,24 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Student Information System</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <div class="container">
-        <h1>Student Information System</h1>
 
-        <p>Name: Cynthia</p>
-        <p>Register Number: 101</p>
-        <p>Programme: MCA</p>
+        <!-- Page Heading -->
+        <h1 id="heading">Student Information App</h1>
 
-        <button onclick="showDetails()">Show Details</button>
+        <p>Welcome to the Student Information System</p>
 
-        <p id="details"></p>
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button onclick="showWelcomeMessage()">
+                Welcome
+            </button>
+
+            <button onclick="showStudentInfo()">
+                Show Student Information
+            </button>
+
+            <button onclick="changeHeading()">
+                Change Heading
+            </button>
+
+        </div>
+
+
+        <!-- Student Information -->
+        <div id="studentInfo" class="student-info">
+            <!-- Student information will appear here -->
+        </div>
+
+
+        <!-- Student Form -->
+        <div class="form-section">
+
+            <h2>Enter Student Details</h2>
+
+            <form onsubmit="return validateForm()">
+
+                <label for="name">Student Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter student name"
+                >
+
+                <label for="course">Course</label>
+                <input
+                    type="text"
+                    id="course"
+                    placeholder="Enter course"
+                >
+
+                <div class="form-buttons">
+
+                    <button type="submit">
+                        Submit
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="clearForm()"
+                    >
+                        Clear
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
     </div>
 
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
+
 </body>
 </html>
